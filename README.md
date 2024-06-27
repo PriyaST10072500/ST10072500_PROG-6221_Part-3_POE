@@ -1,7 +1,6 @@
 # Project Title
 Welcome to the Recipe Application!
 
-
 # Table of Contents
 - [About](#about)
 - [Features](#features)
@@ -12,7 +11,7 @@ Welcome to the Recipe Application!
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [Licenses](#licenses)
-- [My GitHub Repository Link](#my-github-repository-link)
+- [My GitHub Repository Links](#my-github-repository-links)
 
 
 # About
@@ -32,7 +31,6 @@ The Recipe Application addresses the frequent challenge of managing recipes effi
 - **Food Group and Unit Enumeration: ** Use enumerations for food groups and units of measurement for better data management.
 - **Event Handling: ** Notify users when a recipe exceeds 300 calories using event handlers.
 
-
 # Sprint 2
 All aspects were met for Prog, Part 1 of the POE. In Sprint 2, several enhancements and new features were added to the Recipe Application to improve its functionality and user experience. These changes include:
 
@@ -42,11 +40,13 @@ All aspects were met for Prog, Part 1 of the POE. In Sprint 2, several enhanceme
 - **Alphabetical Sorting: ** Added functionality to display all recipes in alphabetical order, making it easier for users to find and select recipes.
 - **Console Menu Enhancements: ** Provided a switch case for displaying the Food Group Options that are available to the user. This improved the console menu by providing clear and user-friendly options for interacting with the application and its features.
 - **Code Refactoring: ** Refactored the code to improve readability, maintainability, and performance, ensuring a more robust and efficient application.
+
 These changes aim to provide a more comprehensive and user-friendly experience, making the Recipe Application a valuable tool for managing and scaling recipes.
 
 
 # Sprint 3
 Transitioning from a console application to a WPF (Windows Presentation Foundation) application for recipe management has significantly enhanced user interaction and functionality. The WPF interface introduces a visually appealing and intuitive layout with tabbed navigation for Add Recipe, View Recipe, All Recipes, Scale Recipe, Reset Recipe, and Delete Recipe functionalities, ensuring organized and efficient task management. 
+
 Utilizing UI elements such as text boxes, buttons, and combo boxes allows for seamless input and display of recipe details, ingredients, and steps, facilitating user-friendly data entry and retrieval. Features like scroll viewers, grids and stack panels ensure content is elegantly presented and easily accessible, while data binding and item templates optimize the dynamic display of ingredient lists and recipe steps. Overall, the transition to WPF enriches usability, visual appeal, and operational efficiency compared to a console application, offering a simple and interactive platform for recipe management.
 
 
@@ -56,6 +56,7 @@ To run the Recipe Application on your local machine, follow these steps:
 2. 	Create a new C# WPF application project.
 3. 	Copy the provided C# code for the Recipe Application into your project files.
 4. 	Build and run the application.
+
 To interact with the core features of the application, follow the on-screen prompts after running the application. Here's a brief overview:
 - **Option 1:** Add Recipe - Input the name, ingredients, quantities, and steps for a recipe.
 - **Option 2:** View Recipe - View the entered recipe details in a structured format.
@@ -78,8 +79,9 @@ To run the Recipe Application locally on your computer:
 1.	Download or clone the project repository from GitHub to your local machine.
 2.	Open the solution file in Visual Studio.
 3.	Build and run the application.
+   
 To access the code on GitHub:
--  Visit the GitHub repository for the WPF Recipe Application.
+-  Visit the GitHub repository for the Recipe Application.
 - The GitHub repository is https://github.com/PriyaST10072500/ST10072500_PROG-6221_Part-3_POE.git
 - Click on the "Code" button to view the repository.
 - You can either download the code as a ZIP file or clone the repository using Git.
