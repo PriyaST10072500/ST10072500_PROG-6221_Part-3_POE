@@ -187,19 +187,27 @@ namespace ST10072500_PROG_6221_Part_3_POE
             {
                 var foundRecipe = Recipes.FirstOrDefault(r => r.RecipeName.Equals(searchQuery, StringComparison.OrdinalIgnoreCase));
 
-                if (foundRecipe != null && !foundRecipe.IsScaled) // Check if recipe scaled
+                if (foundRecipe != null && !foundRecipe.IsScaled)
                 {
+                    if (orgRecipe == null)
+                    {
+                        orgRecipe = foundRecipe.DeepClone(); 
+                    }
+
                     ScaledRecipeTextBox.Text = $"Recipe Name: {foundRecipe.RecipeName} (Scaled by {scalingFactor})\n\n";
                     ScaledRecipeTextBox.AppendText("Ingredients:\n");
 
                     foreach (var ingredient in foundRecipe.Ingredients)
                     {
-                        if (double.TryParse(ingredient.IngredientQuantity, out double originalQuantity))
+                        if (double.TryParse(ingredient.IngredientQuantity, out double originalQuantity) &&
+                            double.TryParse(ingredient.IngredientCalorieCount, out double originalCalories))
                         {
                             double scaledQuantity = originalQuantity * scalingFactor;
+                            double scaledCalories = originalCalories * scalingFactor;
                             ingredient.IngredientQuantity = scaledQuantity.ToString();
+                            ingredient.IngredientCalorieCount = scaledCalories.ToString();
                         }
-                        ScaledRecipeTextBox.AppendText($"{ingredient.IngredientQuantity} {ingredient.IngredientUnit} {ingredient.IngredientName}\n");
+                        ScaledRecipeTextBox.AppendText($"{ingredient.IngredientQuantity} {ingredient.IngredientUnit} {ingredient.IngredientName} ({ingredient.IngredientCalorieCount} calories)\n");
                     }
 
                     ScaledRecipeTextBox.AppendText("\nSteps:\n");
@@ -208,15 +216,12 @@ namespace ST10072500_PROG_6221_Part_3_POE
                         ScaledRecipeTextBox.AppendText($"{instruction.RecipeSteps}\n");
                     }
 
-                    // Update the tabs 
                     AllRecipesListBox.Items.Refresh();
-
-                    // Recipe is scaled
                     foundRecipe.IsScaled = true;
                 }
                 else if (foundRecipe != null)
                 {
-                    ScaledRecipeTextBox.Text = "The recipe has been scaled. Please reset it and try again.";
+                    ScaledRecipeTextBox.Text = "Recipe already scaled! Please try again.";
                 }
                 else
                 {
@@ -225,7 +230,7 @@ namespace ST10072500_PROG_6221_Part_3_POE
             }
             else
             {
-                ScaledRecipeTextBox.Text = "Invalid scaling factor.";
+                ScaledRecipeTextBox.Text = "Invalid scaling factor. Please try again.";
             }
         }
 
@@ -238,6 +243,11 @@ namespace ST10072500_PROG_6221_Part_3_POE
 
             if (foundRecipe != null && orgRecipe != null)
             {
+                MessageBoxResult result = MessageBox.Show($"Do you want to reset recipe?",
+                                                            "Confirm Reset",
+                                                            MessageBoxButton.YesNo,
+                                                            MessageBoxImage.Question);
+
                 // Original inputs
                 foundRecipe.Ingredients = new ObservableCollection<Ingredient>(orgRecipe.Ingredients.Select(i => new Ingredient
                 {
@@ -251,7 +261,7 @@ namespace ST10072500_PROG_6221_Part_3_POE
                     RecipeSteps = ins.RecipeSteps
                 }));
 
-                // Update the text in the ScaledRecipeTextBox to display the original recipe
+                // Update the text to display original recipe
                 ScaledRecipeTextBox.Text = $"Recipe Name: {foundRecipe.RecipeName}\n\n";
                 ScaledRecipeTextBox.AppendText("Ingredients:\n");
 

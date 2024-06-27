@@ -53,6 +53,43 @@ namespace ST10072500_PROG_6221_Part_3_POE
             Steps = new ObservableCollection<Steps>();
         }
 
+        // Calculates the total calories
+        public double TotalCalories
+        {
+            get
+            {
+                return Ingredients.Sum(i =>
+                {
+                    double.TryParse(i.IngredientCalorieCount, out double calorieCount);
+                    return calorieCount;
+                });
+            }
+        }
+
+
+        //Method to copy of recipe
+        public Recipe DeepClone()
+        {
+            var clone = new Recipe
+            {
+                RecipeName = this.RecipeName,
+                IsScaled = this.IsScaled,
+                Ingredients = new ObservableCollection<Ingredient>(this.Ingredients.Select(i => new Ingredient
+                {
+                    IngredientName = i.IngredientName,
+                    IngredientQuantity = i.IngredientQuantity,
+                    IngredientUnit = i.IngredientUnit,
+                    IngredientCalorieCount = i.IngredientCalorieCount,
+                    IngredientFoodGroup = i.IngredientFoodGroup
+                })),
+                Steps = new ObservableCollection<Steps>(this.Steps.Select(i => new Steps
+                {
+                    RecipeSteps = i.RecipeSteps
+                }))
+            };
+            return clone;
+        }
+
 
         public bool MatchesFilter(string FilteringredientName, string FilterfoodGroup, double FiltermaxCalories)
         {
