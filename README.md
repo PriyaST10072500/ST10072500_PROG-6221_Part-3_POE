@@ -42,8 +42,6 @@ All aspects were met for Prog, Part 1 of the POE. In Sprint 2, several enhanceme
 - **Console Menu Enhancements:** Provided a switch case for displaying the Food Group Options that are available to the user. This improved the console menu by providing clear and user-friendly options for interacting with the application and its features.
 - **Code Refactoring:** Refactored the code to improve readability, maintainability, and performance, ensuring a more robust and efficient application.
 
-These changes aim to provide a more comprehensive and user-friendly experience, making the Recipe Application a valuable tool for managing and scaling recipes.
-
 
 # Sprint 3
 Transitioning from a console application to a WPF (Windows Presentation Foundation) application for recipe management has significantly enhanced user interaction and functionality. The WPF interface introduces a visually appealing and intuitive layout with tabbed navigation for Add Recipe, View Recipe, All Recipes, Scale Recipe, Reset Recipe, and Delete Recipe functionalities, ensuring organized and efficient task management. 
