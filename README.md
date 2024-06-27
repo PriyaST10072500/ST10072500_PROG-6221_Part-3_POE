@@ -96,9 +96,9 @@ The Recipe Application was developed by a student named Priya Boodhoo. Furthermo
 The Recipe Application is released under the MIT License.
 
 
-# My GitHub Repository Link
-- GitHub Repo Link for Part 1 and 2 
+# My GitHub Repository Links
+- GitHub Repo Link for Part 1 and 2 :
 https://github.com/PriyaST10072500/PROG-6221_Part-1_ST10072500_Priya.git
-- GitHub Repo Link for Part 3 of POE
+- GitHub Repo Link for Part 3 of POE :
 https://github.com/PriyaST10072500/ST10072500_PROG-6221_Part-3_POE.git
 
