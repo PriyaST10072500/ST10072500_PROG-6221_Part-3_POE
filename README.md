@@ -21,25 +21,26 @@ The Recipe Application addresses the frequent challenge of managing recipes effi
 
 
 # Features
-- **Enter Recipe Details: ** Add the ingredient's name, quantity, unit of measurement, calories, and food group. Specify preparation steps.
-- **Display Recipe: ** View all ingredients and steps of a recipe, along with total calories.
-- **Scale Recipe: ** Adjust ingredient quantities by a specified factor within this range (0.5, 2, 3).
-- **Reset Quantities: ** Reset ingredient quantities to their original values.
-- **Clear Data: ** Remove all recipes from the application.
-- **Calorie Notification: ** Get a warning if the total calories of a recipe exceed 300.
-- **Alphabetical Recipe Display: ** List all recipes in alphabetical order.
-- **Food Group and Unit Enumeration: ** Use enumerations for food groups and units of measurement for better data management.
-- **Event Handling: ** Notify users when a recipe exceeds 300 calories using event handlers.
+- **Enter Recipe Details:** Add the ingredient's name, quantity, unit of measurement, calories, and food group. Specify preparation steps.
+- **Display Recipe:** View all ingredients and steps of a recipe, along with total calories.
+- **Scale Recipe:** Adjust ingredient quantities by a specified factor within this range (0.5, 2, 3).
+- **Reset Quantities:** Reset ingredient quantities to their original values.
+- **Clear Data:** Remove all recipes from the application.
+- **Calorie Notification:** Get a warning if the total calories of a recipe exceed 300.
+- **Alphabetical Recipe Display:** List all recipes in alphabetical order.
+- **Food Group and Unit Enumeration:** Use enumerations for food groups and units of measurement for better data management.
+- **Event Handling:** Notify users when a recipe exceeds 300 calories using event handlers.
+
 
 # Sprint 2
 All aspects were met for Prog, Part 1 of the POE. In Sprint 2, several enhancements and new features were added to the Recipe Application to improve its functionality and user experience. These changes include:
 
-- **Original Quantity Storage: ** Added a feature to store the original quantity of ingredients, allowing users to reset ingredient quantities to their initial values after scaling.
-- **Enhanced Ingredient Input: ** Improved the input process for ingredients by adding validations and detailed prompts for entering ingredient details, including name, quantity, unit of measurement, calories, and food group.
-- **Event Handling for Calorie Notification: ** Implemented an event handler to notify users when the total calories of a recipe exceed 300, enhancing user awareness of calorie content.
-- **Alphabetical Sorting: ** Added functionality to display all recipes in alphabetical order, making it easier for users to find and select recipes.
-- **Console Menu Enhancements: ** Provided a switch case for displaying the Food Group Options that are available to the user. This improved the console menu by providing clear and user-friendly options for interacting with the application and its features.
-- **Code Refactoring: ** Refactored the code to improve readability, maintainability, and performance, ensuring a more robust and efficient application.
+- **Original Quantity Storage:** Added a feature to store the original quantity of ingredients, allowing users to reset ingredient quantities to their initial values after scaling.
+- **Enhanced Ingredient Input:** Improved the input process for ingredients by adding validations and detailed prompts for entering ingredient details, including name, quantity, unit of measurement, calories, and food group.
+- **Event Handling for Calorie Notification:** Implemented an event handler to notify users when the total calories of a recipe exceed 300, enhancing user awareness of calorie content.
+- **Alphabetical Sorting:** Added functionality to display all recipes in alphabetical order, making it easier for users to find and select recipes.
+- **Console Menu Enhancements:** Provided a switch case for displaying the Food Group Options that are available to the user. This improved the console menu by providing clear and user-friendly options for interacting with the application and its features.
+- **Code Refactoring:** Refactored the code to improve readability, maintainability, and performance, ensuring a more robust and efficient application.
 
 These changes aim to provide a more comprehensive and user-friendly experience, making the Recipe Application a valuable tool for managing and scaling recipes.
 
