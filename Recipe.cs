@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ST10072500_PROG_6221_Part_3_POE
 {
-    internal class Recipe
+    class Recipe
     {
     }
 }
