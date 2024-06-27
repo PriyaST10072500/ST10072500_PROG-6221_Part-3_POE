@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ST10072500_PROG_6221_Part_3_POE
 {
+    //Delegate
     public delegate void CaloriesExceededEventHandler(object sender, EventArgs e);
 
     public class CaloriesAmount
     {
+        //Calorie Variables
         private double calorieLimit;
         private double calorieTotalAmt;
 
@@ -40,6 +42,7 @@ namespace ST10072500_PROG_6221_Part_3_POE
             CaloriesExceeded?.Invoke(this, e);
         }
 
+        //Check if calories are greater than 300
         private void CheckCalories()
         {
             if (calorieTotalAmt > 300)
