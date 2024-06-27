@@ -230,7 +230,7 @@ namespace ST10072500_PROG_6221_Part_3_POE
             }
             else
             {
-                ScaledRecipeTextBox.Text = "Invalid scaling factor. Please try again.";
+                ScaledRecipeTextBox.Text = "Incorrect scaling factor. Please try again.";
             }
         }
 

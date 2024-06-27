@@ -53,7 +53,7 @@ namespace ST10072500_PROG_6221_Part_3_POE
             Steps = new ObservableCollection<Steps>();
         }
 
-        // Calculates the total calories
+        // Total calories calculated 
         public double TotalCalories
         {
             get
