@@ -48,6 +48,18 @@ Transitioning from a console application to a WPF (Windows Presentation Foundati
 
 Utilizing UI elements such as text boxes, buttons, and combo boxes allows for seamless input and display of recipe details, ingredients, and steps, facilitating user-friendly data entry and retrieval. Features like scroll viewers, grids and stack panels ensure content is elegantly presented and easily accessible, while data binding and item templates optimize the dynamic display of ingredient lists and recipe steps. Overall, the transition to WPF enriches usability, visual appeal, and operational efficiency compared to a console application, offering a simple and interactive platform for recipe management.
 
+All aspects were met for Prog, Part 2 of the POE. In Sprint 3, several enhancements and new features were added to the WPF Recipe Application to improve its functionality and user experience. These changes include:
+
+The application will transition from a console-based application to a GUI (Graphical User Interface) using WPF (Windows Presentation Foundation):
+
+1. Users can navigate through different tabs to access various functions.
+2. Users can view recipes before scaling them by factors of 0.5, 2, or 3.
+
+3. Users will be able to filter the alphabetical list of recipes by:
+- Entering the name of any ingredient from a recipe.
+- Selecting a food group that the recipe belongs to.
+- Selecting a maximum number of calories in a recipe.
+
 
 # Getting Started
 To run the Recipe Application on your local machine, follow these steps:
