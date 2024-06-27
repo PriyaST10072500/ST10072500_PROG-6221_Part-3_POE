@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ST10072500_PROG_6221_Part_3_POE
 {
-    //Delegate
+    //Delegate for exceeded calories
     public delegate void CaloriesExceededEventHandler(object sender, EventArgs e);
 
     public class CaloriesAmount

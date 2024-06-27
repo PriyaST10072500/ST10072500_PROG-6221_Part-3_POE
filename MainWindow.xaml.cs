@@ -62,6 +62,7 @@ namespace ST10072500_PROG_6221_Part_3_POE
             }
         }
 
+        //Clears Form
         private void ClearForm()
         {
             RecipeNameTextBox.Clear();
@@ -380,7 +381,6 @@ namespace ST10072500_PROG_6221_Part_3_POE
         {
             Ingredients.Add(new Ingredient());
         }
-
         private void AddInstructionBtn_Click(object sender, RoutedEventArgs e)
         {
             Steps.Add(new Steps());
